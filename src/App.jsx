@@ -5,7 +5,7 @@ import Carts from './Components/carts/Carts'
 import Main from './Components/main/Main'
 import NavBar from './Components/Navbar/NavBar'
 import Body from './Components/main/Body/Body'
-import Footer from './Components/footer/footer'
+import Footer from './Components/footer/Footer'
 const fetchData = fetch("jData.json")
   .then(res => res.json())
 
