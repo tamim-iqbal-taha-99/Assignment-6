@@ -31,10 +31,10 @@ const Carts = ({ carts, setCarts }) => {
                 <div>
                     <h1 className='text-4xl font-bold text-green-900 underline text-center'>YOUR CARTS HERE</h1>
 
-                    <div className='px-52 py-8 shadow-2xl rounded-lg mb-3.5 space-y-2 mt-5'>
+                    <div className='px-3 lg:px-52 lg:py-8 shadow-2xl rounded-lg mb-3.5 space-y-2 mt-5'>
                         {
                             carts.length == 0 &&
-                            <div className="text-center lg:text-5xl font-extrabold opacity-70 m-48">
+                            <div className="text-center lg:text-5xl font-extrabold opacity-70 lg:m-48">
                                 <h1>Your Cart is Empty</h1>
                             </div>
                         }
@@ -42,11 +42,11 @@ const Carts = ({ carts, setCarts }) => {
                             carts.map((cartsCard) => (
                                 <div className='border p-4 rounded-lg bg-amber-50'>
                                     <div className='flex justify-between items-center'>
-                                        <div className='flex items-center space-x-3 text-2xl font-semibold'>
+                                        <div className='flex items-center space-x-3 text-sm font-bold md:text-2xl lg:font-semibold'>
                                             <img src={cartsCard.img} alt="" />
                                             <div>
                                                 <h1>{cartsCard.name}</h1>
-                                                <p className='opacity-60'>{cartsCard.price}</p>
+                                                <p className='opacity-60'>${cartsCard.price}/Mo</p>
                                             </div>
                                         </div>
                                         <button onClick={() => rmvBtnHandler(cartsCard)} className='border border-red-600 rounded-full h-fit  px-2.5 text-lg font-semibold text-red-600'>Remove</button>
@@ -56,12 +56,12 @@ const Carts = ({ carts, setCarts }) => {
                                 </div>
                             ))
                         }
-                        <div className='flex mt-4 justify-between bg-violet-500 text-white text-3xl font-bold px-9 py-6 rounded-lg'>
+                        <div className='flex mt-4 justify-between bg-violet-500 text-white md:text-3xl font-bold px-3 py-3.5 lg:px-9  md:py-6 rounded-sm md:rounded-lg'>
                             <div>Total:</div>
                             <div>${totalPrice}</div>
                         </div>
 
-                        <button onClick={checkoutHandler} className='flex mt-4  justify-between bg-green-500 text-white mt text-3xl font-bold px-9 py-6 rounded-full'>Check Out</button>
+                        <button onClick={checkoutHandler} className='flex mt-4   bg-green-500 text-white  lg:text-3xl font-bold px-3 lg:px-9 lg:py-6 rounded-sm lg:rounded-full'>Check Out</button>
                     </div>
                 </div>
             </div>

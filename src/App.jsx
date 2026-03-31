@@ -4,6 +4,7 @@ import Hero from './Components/Banner/Hero'
 import Carts from './Components/carts/Carts'
 import Main from './Components/main/Main'
 import NavBar from './Components/Navbar/NavBar'
+import Body from './Components/main/Body/Body'
 const fetchData = fetch("jData.json")
   .then(res => res.json())
 
@@ -23,7 +24,7 @@ function App() {
       {/* Hero section */}
       <Hero></Hero>
 
-
+    {/* main functionality and the cards */}
       <div className='lg:px-52 pt-7 lg:pt-30 space-y-7'>
         <div className="tabs tabs-box justify-center  bg-white p-2  space-x-3.5">
           <input type="radio" name="my_tabs_1" className="tab rounded-full text-2xl font-bold " aria-label="Products" defaultChecked onClick={() => setActiveTab("products")} />
@@ -37,6 +38,10 @@ function App() {
 
         { activeTab==="carts" && <Carts carts={carts } setCarts={setCarts}></Carts>}
       </div>
+
+      {/* Body */}
+      <Body></Body>
+
     </>
   )
 }

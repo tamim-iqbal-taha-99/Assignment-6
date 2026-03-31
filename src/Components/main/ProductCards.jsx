@@ -17,7 +17,7 @@ const ProductCards = ({ details, carts, setCarts }) => {
                 <div className='text-start space-y-1.5 '>
                     <h1 className=' text-2xl font-bold'>{details.name}</h1>
                     <p className='text-lg font-semibold opacity-70'>{details.description}</p>
-                    <h1 className='text-2xl font-bold'>${details.price}</h1>
+                    <h1 className='text-2xl font-bold'>${details.price}/<span className='opacity-75'>Mo</span></h1>
                     <div className=' text-lg font-semibold opacity-75 text-green-900'>
                         <ul>
                             {details.features.map((feature, index) => (

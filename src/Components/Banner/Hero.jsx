@@ -26,8 +26,8 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className='bg-violet-600 text-white'>
-                <div className='flex justify-around gap-3 text-center font-bold py-4'>
+            <div className='bg-violet-600 text-white lg:px-52 lg:py-16'>
+                <div className='flex justify-around gap-3 text-center font-bold py-4 lg:text-6xl '>
                     <div>
                         <h1>50K+</h1>
                         <p className='opacity-75'>Active User</p>
@@ -36,7 +36,7 @@ const Hero = () => {
                         <h1>4.9</h1>
                         <p className='opacity-75'>Rating</p>
                     </div>
-                    <div>
+                    <div >
                         <h1>200+</h1>
                         <p className='opacity-75'>Premium Tools</p>
                     </div>
