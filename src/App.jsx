@@ -24,7 +24,7 @@ function App() {
       <Hero></Hero>
 
 
-      <div className='px-52 pt-30 space-y-7'>
+      <div className='lg:px-52 pt-7 lg:pt-30 space-y-7'>
         <div className="tabs tabs-box justify-center  bg-white p-2  space-x-3.5">
           <input type="radio" name="my_tabs_1" className="tab rounded-full text-2xl font-bold " aria-label="Products" defaultChecked onClick={() => setActiveTab("products")} />
 

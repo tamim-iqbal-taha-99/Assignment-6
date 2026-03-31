@@ -26,21 +26,22 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className='flex px-52 py-16 justify-center bg-violet-700 text-white rounded-lg'>
-                <div className=' border-r-2 px-11'>
-                    <h1 className='text-7xl font-bold'>50K+</h1>
-                    <h3 className='text-2xl font-semibold opacity-75'>Active Users</h3>
+            <div className='bg-violet-600 text-white'>
+                <div className='flex justify-around gap-3 text-center font-bold py-4'>
+                    <div>
+                        <h1>50K+</h1>
+                        <p className='opacity-75'>Active User</p>
+                    </div>
+                    <div>
+                        <h1>4.9</h1>
+                        <p className='opacity-75'>Rating</p>
+                    </div>
+                    <div>
+                        <h1>200+</h1>
+                        <p className='opacity-75'>Premium Tools</p>
+                    </div>
+                    
                 </div>
-                <div className=' border-r-2 border/40  px-11'>
-                    <h1 className='text-7xl font-bold'>200+</h1>
-                    <h3 className='text-2xl font-semibold opacity-75'>Premium Tools</h3>
-                </div>
-
-                <div className='px-11'>
-                    <h1 className='text-7xl font-bold'>4.9</h1>
-                    <h3 className='text-2xl font-semibold opacity-75'>Rating</h3>
-                </div>
-
             </div>
 
         </div>
